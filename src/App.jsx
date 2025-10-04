@@ -8,7 +8,6 @@ export default function App() {
     nomeEmpresa: '',
     cadeiraBNI: '',
     redesSociais: '',
-    declaracaoGravacao: false,
     minibiografia: '',
     tituloPalestra: '',
     cidadeNascimento: '',
@@ -139,7 +138,6 @@ export default function App() {
           nomeEmpresa: '',
           cadeiraBNI: '',
           redesSociais: '',
-          declaracaoGravacao: false,
           minibiografia: '',
           tituloPalestra: '',
           cidadeNascimento: '',
@@ -269,22 +267,6 @@ export default function App() {
             />
           </div>
 
-          {/* Declaração Gravação */}
-          <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
-            <label className="flex items-start cursor-pointer">
-              <input
-                type="checkbox"
-                name="declaracaoGravacao"
-                checked={formData.declaracaoGravacao}
-                onChange={handleInputChange}
-                className="mt-1 mr-3 h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
-              />
-              <span className="text-sm text-gray-700">
-                Declaro estar ciente de que a gravação do Reels é um serviço opcional em parceria com o Tiaraju Estúdio, com investimento no valor de R$ 300,00 (trezentos reais).
-              </span>
-            </label>
-          </div>
-
           {/* Upload Foto */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -315,13 +297,7 @@ export default function App() {
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Minibiografia do Palestrante
             </label>
-            <textarea
-              name="minibiografia"
-              value={formData.minibiografia}
-              onChange={handleInputChange}
-              rows="4"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-            />
+            
           </div>
 
           {/* Título da Palestra */}
