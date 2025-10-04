@@ -294,7 +294,7 @@ export default function App() {
 
           {/* Minibiografia */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label className="block text-base font-medium text-gray-700 mb-2">
               Minibiografia do Palestrante
             </label>
             
