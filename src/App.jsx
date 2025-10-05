@@ -293,7 +293,7 @@ export default function App() {
           </div>
 
           {/* Minibiografia */}
-          <div>
+          <div className="mt-6">
             <label className="block text-base font-medium text-gray-700 mb-2">
               Minibiografia do Palestrante
             </label>
